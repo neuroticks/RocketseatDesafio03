@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-brand-light: #59B2FF;
+    --color-brand-mid: #3487CF;
+    --color-brand-dark: #1D6FB6;
+
+    --color-purple: #B259FF;
+    --color-fuschia: #FF59F9;
+    --color-pink: #FF598B;
+    --color-orange: #FF8B59;
+    --color-yellow: #FFCD59;
+    --color-lime: #E1FF59;
+    --color-green: #59FF91;
+    --color-cyan: #59FFF9;
+    --color-navy: #6A59FF;
+
+    --color-danger: #FF5959;
+
+    --color-input-base: #1C1F21;
+    --color-input-stroke: #363B40;
+    --color-input-placeholder: #869198;
+
+    --color-shape-background: #131516;
+    --color-shape-body: #212427;
+    --color-shape-button: #2D3136;
+    --color-shape-hover: #383D42;
+
+    --color-text-body: #C8CDD0;
+    --color-text-heading: #F9F9F9;
+
+
+    --font-family-leckerli: "Leckerli One", cursive;
+    --font-family-baloo: "Baloo 2", sans-serif;
+    --font-family-opensans: "Open Sans", sans-serif;
+
+    --font-leckerli-lg: regular 2.5rem/1.5 var(--font-family-leckerli);
+    
+    --font-baloo-md: bold 1.75rem/1.5 var(--font-family-baloo);
+    --font-baloo-sm: bold 1.125rem/1.5 var(--font-family-baloo);
+
+    --font-opens-md: regular_semibold 1rem/1.5 var(--font-family-opensans);
+    --font-opens-sm: regular_semibold 0.875rem/1.5 var(--font-family-opensans);
+    --font-opens-xs: regular_semibold 0.75rem/1.5 var(--font-family-opensans);
+
+}
