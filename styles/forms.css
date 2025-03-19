@@ -15,7 +15,7 @@ fieldset {
     border: 0;
     /* border: 1px solid blue; */
 
-    & > .input-wrapper {
+    &>.input-wrapper {
         margin-top: 1.5rem;
     }
 }
@@ -29,5 +29,13 @@ legend {
     color: var(--color-text-heading);
 
     /* margin-bottom: 1.5rem; */
-}
 
+    & svg {
+        width: 1.5rem;
+        height: 1.5rem;
+
+        & path {
+            fill: var(--color-input-placeholder);
+        }
+    }
+}
