@@ -38,13 +38,42 @@
     --font-family-baloo: "Baloo 2", sans-serif;
     --font-family-opensans: "Open Sans", sans-serif;
 
-    --font-leckerli-lg: regular 2.5rem/1.5 var(--font-family-leckerli);
+    /* logo */
+    --font-leckerli-lg: 400 2.5rem var(--font-family-leckerli);
     
-    --font-baloo-md: bold 1.75rem/1.5 var(--font-family-baloo);
-    --font-baloo-sm: bold 1.125rem/1.5 var(--font-family-baloo);
+    /* heading */
+    --font-heading-md: 700 1.75rem var(--font-family-baloo);
+    --font-heading-sm: 700 1.125rem var(--font-family-baloo);
 
-    --font-opens-md: regular_semibold 1rem/1.5 var(--font-family-opensans);
-    --font-opens-sm: regular_semibold 0.875rem/1.5 var(--font-family-opensans);
-    --font-opens-xs: regular_semibold 0.75rem/1.5 var(--font-family-opensans);
+    /* body */
+    --font-body-lt: 300 1rem var(--font-family-opensans);
+    --font-body: 400 1rem var(--font-family-opensans);
+    --font-body-sb: 600 1rem var(--font-family-opensans);
+    --font-body-sm: 400 0.875rem var(--font-family-opensans);
+    --font-body-sm-sb: 600 0.875rem var(--font-family-opensans);
+    --font-body-xs: 400 0.75rem var(--font-family-opensans);
+    --font-body-xs-sb: 600 0.75rem var(--font-family-opensans);
 
+}
+
+body {
+    overflow: hidden;
+
+    font: var(--font-body-sm);
+    color: var(--color-text-body);
+}
+
+.flex {
+    display: flex;
+    gap: 1rem;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.input-wrapper,
+.textarea-wrapper {
+    display: grid;
+    gap: .75rem;
 }

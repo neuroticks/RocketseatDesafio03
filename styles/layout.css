@@ -1,0 +1,87 @@
+#app {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1.25rem;
+
+    padding: 1.25rem;
+    /* margin: 5rem; */
+
+    max-width: 80rem;
+    height: 100vh;
+    margin: auto;
+
+    overflow: hidden;
+
+    background-color: var(--color-brand-dark);
+
+    border-radius: 1.25rem;
+}
+
+aside {
+    display: grid;
+    justify-items: end;
+
+    overflow: auto;
+
+    .brand {
+        width: 25rem;
+        height: 45.5rem;
+
+        background: linear-gradient(to bottom, #21252680, #21252665, #21252630, #21252610), url(../assets/Background.png);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        margin-left: auto;
+
+        border-radius: .75rem;
+
+        header {
+            display: grid;
+            /* justify-content: space-around; */
+            gap: 1rem;
+
+            padding: 2rem;
+
+            img {
+                width: 2.86rem;
+                height: 3rem;
+            }
+
+            h1 {
+                font: var(--font-leckerli-lg);
+                color: var(--color-pink);
+            }
+
+            p {
+                font: var(--font-body-lt);
+                color: var(--color-text-heading);
+            }
+        }
+    }
+}
+
+main {
+    display: grid;
+    justify-content: start;
+    gap: 2.5rem;
+
+    overflow: auto;
+
+    padding: 1.25rem;
+
+    /* padding-block: 5rem; */
+
+    border-radius: .75rem;
+
+    background-color: var(--color-shape-body);
+    /* box-shadow: 0 0 0 1.25rem var(--color-shape-background); */
+
+    p {
+        font: var(--font-heading-md);
+        color: var(--color-text-heading);
+
+        margin-top: 5rem;
+        margin-left: 8.125rem;
+    }
+}

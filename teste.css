@@ -1,0 +1,39 @@
+.radio-group {
+    display: flex;
+    gap: 10px; /* Espaço entre os botões */
+  }
+  
+  .radio-group input[type="radio"] {
+    display: none; /* Esconde os radio buttons */
+  }
+  
+  .radio-group label {
+    display: flex;
+    align-items: center; /* Alinha o SVG e o texto verticalmente */
+    gap: 8px; /* Espaço entre o SVG e o texto */
+    padding: 10px 20px; /* Tamanho do botão */
+    background-color: #f0f0f0; /* Cor de fundo padrão */
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 5px; /* Cantos arredondados */
+    cursor: pointer; /* Cursor de ponteiro */
+    text-align: center;
+    flex: 1; /* Faz os botões ocuparem o mesmo espaço */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
+  }
+  
+  .radio-group label svg {
+    width: 20px; /* Tamanho do SVG */
+    height: 20px;
+    fill: #666; /* Cor padrão do SVG */
+    transition: fill 0.3s ease; /* Transição suave para a cor do SVG */
+  }
+  
+  .radio-group input[type="radio"]:checked + label {
+    background-color: #007bff; /* Cor de fundo quando selecionado */
+    color: #fff; /* Cor do texto quando selecionado */
+    border-color: #007bff; /* Cor da borda quando selecionado */
+  }
+  
+  .radio-group input[type="radio"]:checked + label svg {
+    fill: #fff; /* Cor do SVG quando selecionado */
+  }
