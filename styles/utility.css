@@ -1,0 +1,34 @@
+
+.color-brandlight {
+    background-color: var(--color-brand-light);
+}
+.color-navy {
+    background-color: var(--color-navy);
+}
+.color-purple {
+    background-color: var(--color-purple);
+}
+.color-fuschia {
+    background-color: var(--color-fuschia);
+}
+.color-pink {
+    background-color: var(--color-pink);
+}
+.color-danger {
+    background-color: var(--color-danger);
+}
+.color-orange {
+    background-color: var(--color-orange);
+}
+.color-yellow {
+    background-color: var(--color-yellow);
+}
+.color-lime {
+    background-color: var(--color-lime);
+}
+.color-green {
+    background-color: var(--color-green);
+}
+.color-cyan {
+    background-color: var(--color-cyan);
+}

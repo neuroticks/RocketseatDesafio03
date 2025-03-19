@@ -19,9 +19,9 @@
     justify-content: center;
     align-items: center;
     gap: .25rem;
-    
+
     height: 3rem;
-    
+
     padding: 0.5rem;
 
     /* border: 1px solid #ccc; Borda */
@@ -56,5 +56,108 @@
 .radio-wrapper input[type="radio"]:checked+label svg {
     path {
         fill: var(--color-brand-light);
+    }
+}
+
+/* 
+===================
+*/
+.theme-color-inner {
+    display: flex;
+}
+
+.theme-color-inner input[type="radio"] {
+    display: none;
+}
+
+.theme-color-inner {
+
+    div {
+        margin-right: 1rem;
+
+        width: 2.5rem;
+        height: 2.5rem;
+
+        border: 5px solid transparent;
+        outline: 5px solid var(--color-shape-button);
+
+        border-radius: 50%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: auto;
+
+        cursor: pointer;
+    }
+
+    & div:nth-last-child(-n+1) {
+        margin: 0;
+    }
+}
+
+.theme-color-inner input[type="radio"]:hover {
+    border: 5px solid transparent;
+    outline: 5px solid var(--color-shape-hover);
+}
+
+.theme-color-inner input[type="radio"]:checked {
+    border: 5px solid var(--color-shape-button);
+    outline: 12px solid var(--color-brand-light);
+}
+
+
+/* 
+=========Tema da Festa=========
+*/
+.tema-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+    gap: .5rem;
+}
+
+.tema-inner {
+
+    display: grid;
+    justify-items: center;
+    gap: 0.5rem;
+
+    background-color: var(--color-shape-button);
+
+    border: 2px solid transparent;
+    outline: 1px solid var(--color-input-stroke);
+    border-radius: 0.5rem;
+
+    padding: .25rem .25rem .5rem .25rem;
+
+    position: relative;
+
+    img {
+        border-radius: .25rem;
+        width: 100%;
+    }
+
+    & input,
+    & input:focus,
+    & input:hover {
+        all: unset;
+
+        position: absolute;
+        inset: 0;
+    }
+
+    .tema-image {
+        position: absolute;
+        object-fit: cover;
+    }
+
+    &:hover,
+    &:focus-within {
+        background-color: var(--color-shape-hover);
+    }
+
+    &:has(:checked) {
+        outline: 2px solid var(--color-brand-light);
+        background-color: var(--color-shape-button);
     }
 }
