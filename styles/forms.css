@@ -15,7 +15,7 @@ fieldset {
     border: 0;
     /* border: 1px solid blue; */
 
-    &>.input-wrapper {
+    & >.input-wrapper, & >.theme-color-wrapper {
         margin-top: 1.5rem;
     }
 }

@@ -60,55 +60,58 @@
 }
 
 /* 
-===================
+=========Cor do Tema da Festa=========
 */
-.theme-color-inner {
+.color-wrapper {
+
     display: flex;
+    column-gap: 1rem;
 }
 
-.theme-color-inner input[type="radio"] {
-    display: none;
-}
+.color-inner {
 
-.theme-color-inner {
+    display: flex;
+ 
+    cursor: pointer;
 
-    div {
-        margin-right: 1rem;
-
-        width: 2.5rem;
-        height: 2.5rem;
-
-        border: 5px solid transparent;
-        outline: 5px solid var(--color-shape-button);
-
-        border-radius: 50%;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: auto;
-
-        cursor: pointer;
-    }
-
-    & div:nth-last-child(-n+1) {
-        margin: 0;
-    }
-}
-
-.theme-color-inner input[type="radio"]:hover {
     border: 5px solid transparent;
-    outline: 5px solid var(--color-shape-hover);
+    outline: 5px solid var(--color-shape-button);
+    border-radius: 50%;
+
+    width: 2.5rem;
+    height: 2.5rem;
+
+    position: relative;
+
+    & input,
+    & input:focus,
+    & input:hover {
+        all: unset;
+
+        position: absolute;
+        inset: 0;
+    }
+
+    .color-image {
+        position: absolute;
+        object-fit: cover;
+    }
+
+    &:hover,
+    &:focus-within {
+        border: 5px solid transparent;
+        outline: 5px solid var(--color-shape-hover);
+        border-radius: 50%;
+    }
+
+    &:has(:checked) {
+        border: 5px solid var(--color-shape-button);
+        outline: 2px solid var(--color-brand-light);
+        border-radius: 50%;
+    }
 }
-
-.theme-color-inner input[type="radio"]:checked {
-    border: 5px solid var(--color-shape-button);
-    outline: 12px solid var(--color-brand-light);
-}
-
-
 /* 
-=========Tema da Festa=========
+=========Imagem do Tema da Festa=========
 */
 .tema-wrapper {
     display: grid;
