@@ -98,7 +98,7 @@
                                 </div>
 
                                 <div class="input-wrapper flex-1">
-                                    <label for="local">Local</label>
+                                    <label for="local-evento">Local</label>
                                     <input type="text" id="local-evento" name="local-evento"
                                         placeholder="Link ou endereço">
                                 </div>
@@ -123,9 +123,8 @@
                                 <span>Personalização</span>
                             </legend>
 
-
                             <div class="input-wrapper">
-                                <label>Tema do evento</label>
+                                <label>Cor principal</label>
 
                                 <div class="color-wrapper">
                                     <div class="color-inner color-brandlight">
@@ -277,14 +276,18 @@
 
                             <div class="flex">
 
-                                <div class="input-wrapper flex-1">
+                                <div class="bgcolor-wrapper">
                                     <label>Estilo</label>
-                                    <div class="checkbox-wrapper">
-                                        <input type="checkbox" id="estilo-convite" name="estilo-convite">
-                                        <span class="slider"></span>
-                                        <label for="estilo-convite">Escuro</label>
+                                    <div class="check-label">
+                                        <label class="checkbox-wrapper">
+                                            <input type="checkbox" id="dark-theme" name="dark-theme" checked>
+                                            <span class="checkbox-slider"></span>
+                                        </label>
+                                        <span id="dark-text">Escuro</span>
+                                        <span id="light-text">Claro</span>
                                     </div>
                                 </div>
+
                                 <div class="input-wrapper">
                                     <label>Foto de capa</label>
                                     <div class="upload">
