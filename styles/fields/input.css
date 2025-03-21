@@ -30,7 +30,7 @@ input[type="datetime-local"]:focus-within {
     outline: 1px solid var(--color-brand-light);
     /* border-color: var(--color-brand-light); */
     font: var(--color-text-heading);
-    
+
     /* outline-offset: .1px; */
 }
 
@@ -38,11 +38,42 @@ input[type="datetime-local"]:focus-within {
 /* =========================================== */
 
 input[type="datetime-local"] {
-    
+
     width: 17rem;
     height: 3rem;
 
     &::-webkit-calendar-picker-indicator {
         opacity: 0;
+    }
+}
+
+/* =========================================== */
+
+.error {
+    svg path {
+        fill: transparent;
+    }
+
+    span {
+        display: none;
+    }
+}
+
+.input-wrapper:has(input:required:invalid) {
+    .error {
+        display: flex;
+        align-items: center;
+        gap: .25rem;
+
+        svg path {
+            fill: var(--color-danger);
+        }
+
+        span {
+            display: inline;
+
+            font: var(--text-sm--font-body-xs);
+            color: var(--color-danger);
+        }
     }
 }
