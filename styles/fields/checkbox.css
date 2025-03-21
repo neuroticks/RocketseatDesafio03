@@ -39,10 +39,12 @@
     }
 
     #light-text {
+        width: 7rem;
         display: none;
     }
 
     #dark-text {
+        width: 7rem;
         display: inline;
     }
 
