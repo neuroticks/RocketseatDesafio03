@@ -39,3 +39,9 @@ legend {
         }
     }
 }
+
+.input-group-wrapper {
+    border-top: 1px solid var(--color-input-placeholder);
+
+    padding-top: 2.5rem;
+}
