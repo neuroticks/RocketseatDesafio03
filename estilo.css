@@ -1,0 +1,90 @@
+.input-wrapper {
+    display: grid;
+    gap: .75rem;
+
+}
+.checkbox-wrapper {
+    display: flex;
+    column-gap: 1rem;
+
+    width: 5rem;
+    height: 2rem;
+
+    border: 1px solid blue;
+    border-radius: 1rem;
+
+    position: relative;
+
+    cursor: pointer;
+
+    input {
+        all: unset;
+
+        position: absolute;
+    border: 1px solid orange;
+
+        inset: 0;
+    }
+
+      input:checked + .slider:before {
+            background-color: green;
+      }
+
+      /* input:checked + .slider {
+        background-color: #2196F3;
+      } */
+      
+      input:hover + .slider:before {
+        box-shadow: 0 0 5px #2196F3;
+      }
+      
+      input:checked + .slider:before {
+        transform: translateX(3rem);
+      }
+}
+
+.slider {
+    position: absolute;
+
+    border: 1px solid red;
+    /* display: flex;
+    align-items: center;
+    align-content: space-around; */
+
+    /* width: 1.9rem;
+    height: 1.9rem; */
+    /* top: .05rem;
+    left: .05rem; */
+    object-fit: cover;
+
+background-color: lightgray;
+    /* border: 1px solid transparent;
+    outline: 1px solid red; */
+    border-radius: 50%;
+
+
+}
+
+.slider:before {
+    position: absolute;
+
+    content: "";
+
+    height: 1.9rem;
+    width: 1.9rem;
+    top: .05rem;
+    left: .05rem;
+    
+    /* left: 4px;
+    bottom: 4px; */
+    background-color: gray;
+
+    transition: .4s;
+    border-radius: 50%;
+  }
+
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
